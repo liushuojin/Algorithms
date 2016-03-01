@@ -16,13 +16,13 @@ public class MergeSort {
                 r1 = i + width / 2 - 1 > n - 1 ?  n - 1 : i + width / 2 - 1;
                 l2 = i + width / 2 > n - 1 ? n - 1 : i + width / 2;
                 r2 = i + width - 1 > n - 1 ? n - 1 : i + width - 1;
-                System.out.println("呵呵" + l1 + ' ' + r1 + ' ' + l2 + ' ' + r2 + "结束");
+                //System.out.println("呵呵" + l1 + ' ' + r1 + ' ' + l2 + ' ' + r2 + "结束");
                 int l = l1;
                 while(r1 != l2 && l1 <= r1 && l2 <= r2){
                     if(A[l1] <= A[l2]){
                         B[bi++] = A[l1++];
                     } else {
-                        B[bi++] = B[l2++];
+                        B[bi++] = A[l2++];
                     }
                 }
                 while(l1 <= r1){
